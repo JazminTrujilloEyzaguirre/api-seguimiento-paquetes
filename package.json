@@ -1,0 +1,35 @@
+{
+  "name": "api-seguimiento-paquetes",
+  "version": "1.0.0",
+  "description": "Gestiona paquetes, estados y eventos de cambio de estado. Utiliza autenticación JWT y optimización de consultas",
+  "main": "src/server.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node run src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "mocha tests/**/*.test.js"
+  },
+  "keywords": [
+    "paquetes",
+    "api",
+    "estados",
+    "seguimiento"
+  ],
+  "author": "Jazmin Trujillo Eyzaguirre",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.4.0",
+    "sinon": "^15.2.0"
+  }
+}
